@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+
+#div1{
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+    font-size: 2rem;
+    font-family: Raleway, Arial;
+}
+/*16px = 1em of 1rem*/
+#div2{
+    width: 300px;
+    height: 100px;
+    padding: 60px;
+    border: 1px solid red;
+    margin: 50px;
+    font-size: 2em; /*2rem=32px*/
+}
