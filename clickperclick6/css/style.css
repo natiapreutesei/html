@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+#blocka,#blockb,#blockc{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+}
+#parent{
+    position: relative;
+    background: blue;
+    width: 300px;
+    height: 800px;
+}
+#blocka{
+    background: red;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+#blockb{
+    background: yellow;
+    margin-bottom: 20px;
+}
+
+#blockc{
+    background: orange;
+    margin: 30px;
+}
