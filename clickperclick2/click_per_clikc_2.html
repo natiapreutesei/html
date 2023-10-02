@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Dit is een cursus over HTML">
+    <meta name="keywords" content="html, cursus, html cursus, tags, meta tags, headings"> <!--minimal 5 keer en maximal 13 keer for google-->
+    <meta name="author" content="Natanael Apreutesei">
+    <meta name="robots" content="index,follow">
+    <meta property="og:title" content="Voorbeld Webpagina">
+    <meta property="og:description" content="Dit is een cursus over HTML">
+    <meta property="og:image" content="http://images/test.jpg">
+    <meta property="twitter.title" content="Voorbeld Website">
+    <meta property="twitter:description" content="Dit is een cursus over HTML">
+    <meta property="twitter:image" content="http://images/test.jpg">
+    <title>HTML</title>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="http://www.google.be" target="_blank">Google</a></li>
+        <li><a href="http://www.bing.be" target="_blank">Bing</a></li>
+        <li><a href="#nb">Nieuw block</a></li>
+    </ul>
+</nav>
+<h1>CONTAINER TAGS</h1>
+<main>
+    <section id="jupilerproleague">
+        <header>
+            <h2>Jupiler Pro League</h2>
+            <a href="https://www.proleague.be/" target="_blank"><figure>
+                    <img src="images/logo.jpg" alt="jupiler logo">
+                    <figcaption>Fig 1. Jupiler Pro League Logo</figcaption>
+                </figure>
+            </a>
+        </header>
+        <article>
+            <header>
+                <h3>Anderlecht, 3de trainer in 3 maanden</h3>
+            </header>
+            <p>Het gaat van kwaad erger bij Anderlecht......</p>
+        </article>
+        <article>
+            <header>
+                <h3>Cercle, goe bezig</h3>
+            </header>
+            <p>In de allerlaatste minutt toch geklpot.</p>
+        </article>
+    </section>
+    <section id="proximusleague">
+        <header>
+            <h2>Proximus League</h2>
+        </header>
+        <article>
+            <header>
+                <h3>KV Mechelent wint de beker</h3>
+            </header>
+            <p>Het is jaren geleden dat een tweedklasser de beker won!</p>
+        </article>
+    </section>
+    <section id="formtags">
+        <form action="">
+            <fieldset>
+                <legend>Personalia:</legend>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" required><br>
+                <input type="checkbox"><br>
+                <input type="color"><br>
+                <input type="date"><br>
+                <input type="datetime-local"><br>
+                <input type="email"><br>
+                <input type="file"><br>
+                <input type="month"><br>
+                <input type="number"><br>
+                <input type="password"><br>
+                <input type="radio"><br>
+                <input type="range"><br>
+                <input type="search"><br>
+                <input type="tel"><br>
+                <input type="url"><br>
+                <input type="week"><br>
+                <select name="" id="mydropdown">
+                    <option value="" disabled selected="true">Kies een element</option>
+                    <option value="1">HTML5</option>
+                    <option value="2">CSS</option>
+                </select><br>
+                <textarea name="" id="" cols="60" rows="4"></textarea><br>
+                <button type="submit">test</button>
+            </fieldset>
+        </form>
+    </section>
+    <section id="test">
+        <header>
+            <h2 id="nb">Nieuwe block</h2>
+        </header>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, alias aliquid blanditiis consectetur consequuntur deserunt earum enim, eum fugit illum iste iusto nulla obcaecati placeat possimus rem temporibus voluptas voluptates.
+        </p>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2023 - NA Design</p>
+</footer>
+<script src="js"></script>
+</body>
+</html>
