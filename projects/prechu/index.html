@@ -18,7 +18,8 @@
     <meta content="http://images/test.jpg" property="twitter:image">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+    <link rel="stylesheet" href="css/lightbox.css" />
 
     <title>Prechu</title>
 </head>
@@ -222,10 +223,27 @@
     <!--END structuresection-->
 
     <!--BEGIN lightbox-->
+
     <section>
 
+            <a href="images/auto2.jpg" data-lightbox="roadtrip"><img src="images/auto2.jpg" alt="auto" width="200"></a>
+            <a href="images/auto3.jpg" data-lightbox="roadtrip"><img src="images/auto3.jpg" alt="auto" width="200"></a>
+            <a href="images/auto4.jpg" data-lightbox="roadtrip"><img src="images/auto4.jpg" alt="auto" width="200"></a>
+            <a href="images/auto5.jpg" data-lightbox="roadtrip"><img src="images/auto4.jpg" alt="auto" width="200"></a>
+            <a href="images/auto1.jpg" data-lightbox="roadtrip"><img src="images/auto1.jpg" alt="auto" width="200"></a>
+
     </section>
+
     <!--END lightbox-->
+
+    <section id="videoenmore" class="d-flex">
+        <div class="w-50">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WTKEa7kikcg?si=cQG8ClHJlP2yfWpC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="w-50">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2513.7799272517736!2d3.096873176532476!3d50.946282871691125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c335bceb4d0467%3A0xa4ec8ad74209fbc5!2sSyntra%20West!5e0!3m2!1sen!2sbe!4v1696337211987!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
 </main>
 
 <footer>
@@ -238,6 +256,18 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+</script>
+
+
+
+
+<script src="js/lightbox-plus-jquery.js"></script>
+<script>
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'positionFromTop': 200,
+    })
 </script>
 <script src="js/index.js"></script>
 </body>
