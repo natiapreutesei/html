@@ -56,9 +56,26 @@
 .w-100{
     width:100%;
 }
+
 /*BEGIN fonts*/
 @font-face {
-    font-family:swpl;
-    src: url("../webfonts/segoe-wp-light.ttf");
+    font-family:sog;
+    src: url("../webfonts/Segoe UI.woff");
+}
+@font-face {
+    font-family:sogb;
+    src: url("../webfonts/Segoe UI Bold.woff");
+}
+@font-face {
+    font-family:sogbi;
+    src: url("../webfonts/Segoe UI Bold Italic.woff");
+}
+@font-face {
+    font-family:sogi;
+    src: url("../webfonts/Segoe UI Italic.woff");
+}
+@font-face {
+    font-family:sogl;
+    src: url("../webfonts/Segoe UI Light.ttf");
 }
 /*END fonts*/
