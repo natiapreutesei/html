@@ -1,5 +1,13 @@
+/*CSS variables*/
+:root{
+    --be-blue: #4bcaff;
+}
+/*END CSS variables*/
+
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 /** GENERAL CSS SETTINGS **/
 .d-flex{
@@ -57,102 +65,90 @@
     width:100%;
 }
 
-.container {
-    width: 715px; /* Set the width of the grey box */
-    background-color: #4a545c; /* Set the background color of the grey box */
-
-}
-/*.element1, .element2 {
-    position: absolute;
-}
-.element1 {
-    top: 50%;
-    left: 50%;
-    z-index: 1; !* Element 1 will be on top *!
-}
-.element2 {
-    top: 50%;
-    left: 50%;
-    z-index: 0; !* Element 2 will be below Element 1 *!
-}*/
 /*BEGIN fonts*/
 @font-face {
     font-family:sog;
-    src: url("../webfonts/Segoe UI.woff");
+    src: url("../webfonts/SegoeUI.woff");
 }
 @font-face {
     font-family:sogb;
-    src: url("../webfonts/Segoe UI Bold.woff");
+    src: url("../webfonts/SegoeUIBold.woff");
 }
 @font-face {
     font-family:sogbi;
-    src: url("../webfonts/Segoe UI Bold Italic.woff");
+    src: url("../webfonts/SegoeUIBoldItalic.woff");
 }
 @font-face {
     font-family:sogi;
-    src: url("../webfonts/Segoe UI Italic.woff");
+    src: url("../webfonts/SegoeUIItalic.woff");
 }
 @font-face {
     font-family:sogl;
-    src: url("../webfonts/Segoe UI Light.ttf");
+    src: url("../webfonts/SegoeUILight.ttf");
 }
 /*END fonts*/
+
+/*INITIALIZE BODY*/
 body{
-    margin-top: 0;
-    /*width: 1920px;
-    margin: 0 auto;*/
+    width: 1920px;
+    margin: 0 auto; /*centering the screen if it's bigger then 1920*/
 }
-/*BEGIN navigation*/
+/*END INITIALIZE BODY*/
+
+/* HEADER - NAVMENU*/
+header{
+    background: url("../images/background.png") no-repeat;
+    font-family: sogb;
+}
+#headertop{
+    background: rgba(57,68,75,40%);
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+nav{
+    width: 1175px;
+    margin: 0 auto;
+}
+#brand{
+    font-size: 1.87rem;
+    color: #fff;
+}
+#brand span{
+    color: var(--be-blue);
+}
 ul{
     list-style-type: none;
 }
-nav li a{
-    text-decoration: none;
-    color: #FFF;
-}
-nav{
-    background-color: rgba(0, 0, 0, 0.5)
-}
-nav p{
-    font-family: sogb;
+ul li a{
+    text-decoration: none; /*no underline*/
     color: #fff;
-    font-size: 30px;
-    margin: 0;
+    font-size: 14px;
+    padding: 10px 18px;
+    border: 2px solid transparent;
+    text-transform: uppercase; /*does the uppercase*/
 }
-nav span{
-    color: #4bcaff;
+ul li a:hover{
+    padding: 10px 18px;
+    border:2px solid var(--be-blue);
+    color: var(--be-blue);
 }
-/*END navigation*/
-
-/*BEGIN hero*/
-#divheader{
-    background-image: url("../images/background.png");
-    background-repeat: no-repeat;
-}
-#hero h2{
-    font-family:sogl;
-    font-size: 42px;
-    color:#fff;
-    margin: 5px;
-}
-#hero h2::first-letter{
-    background:transparent !important;
-}
-
-#h2a{
-    z-index: 0;
-}
-#greybackground{
-    background-color: #4a545c;
-    width: 685px;
-    height: 70px;
-    position: absolute;
-    top: 92%;
-    left: 32%;
-    z-index: 1;
-}
-
+/*END HEADER - NAVMENU*/
+/*BEGIN HEADER - HERO*/
 #hero{
-    height: 800px;
+    font-family: sogl;
+    font-size: 2.625rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding:269px 0;
 }
-/*END hero*/
+#hero div:first-child{
+    width: 39%;
+}
+#hero div:last-child{
+    width: 52%;
+}
+#hero div:first-child,#hero div:last-child{
+    background: rgba(57,68,75,80%);
+}
+
+/*END HEADER - HERO*/
