@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+/** GENERAL CSS SETTINGS **/
+.d-flex{
+    display:flex;
+}
+.flex-column{
+    flex-direction:column;
+}
+.flex-row{
+    flex-direction:row;
+}
+.justify-content-start{
+    justify-content: flex-start;
+}
+.justify-content-center{
+    justify-content:center;
+}
+.justify-content-end{
+    justify-content:flex-end;
+}
+.justify-content-between{
+    justify-content:space-between;
+}
+.justify-content-around{
+    justify-content: space-around;
+}
+.align-items-center{
+    align-items:center;
+}
+.flex-wrap{
+    flex-wrap:wrap;
+}
+.text-center{
+    text-align: center;
+}
+.w-25{
+    width:25%;
+}
+.w-33{
+    width:33%;
+}
+.w-40{
+    width:40%;
+}
+.w-50{
+    width:50%;
+}
+.w-60{
+    width:60%;
+}
+.w-75{
+    width:75%;
+}
+.w-100{
+    width:100%;
+}
+
+/*BEGIN fonts*/
+@font-face {
+    font-family:sog;
+    src: url("../webfonts/Segoe UI.woff");
+}
+@font-face {
+    font-family:sogb;
+    src: url("../webfonts/Segoe UI Bold.woff");
+}
+@font-face {
+    font-family:sogbi;
+    src: url("../webfonts/Segoe UI Bold Italic.woff");
+}
+@font-face {
+    font-family:sogi;
+    src: url("../webfonts/Segoe UI Italic.woff");
+}
+@font-face {
+    font-family:sogl;
+    src: url("../webfonts/Segoe UI Light.ttf");
+}
+/*END fonts*/
