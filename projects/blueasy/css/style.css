@@ -64,6 +64,12 @@
 .w-100{
     width:100%;
 }
+.line {
+    width: 46px;
+    border: 1px solid #fff;
+    margin: 3px;
+    display:inline-block;
+}
 
 /*BEGIN fonts*/
 @font-face {
@@ -96,7 +102,7 @@ body{
 /*END INITIALIZE BODY*/
 
 /* HEADER - NAVMENU*/
-header{
+#fullheader{
     background: url("../images/background.png") no-repeat;
     font-family: sogb;
 }
@@ -152,3 +158,64 @@ ul li a:hover{
 }
 
 /*END HEADER - HERO*/
+
+/*BEGIN MAIN - BLUESECTION*/
+#main1{
+    width: 1920px;
+    margin: 0 auto;
+    background: var(--be-blue);
+}
+#main2{
+    width: 1920px;
+    margin: 0 auto;
+    background: #515f67;
+    padding: 90px 0;
+}
+#services{
+    width: 1175px;
+    margin: 0 auto;
+
+}
+
+main section h2{
+    font-family: sogl;
+    font-size: 1.87rem;
+    text-transform: uppercase;
+    color: white;
+}
+main section h3{
+    font-family: sogl;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding-bottom: 21px;
+}
+main img{
+    padding-top: 40px;
+    padding-bottom: 23px;
+}
+main section p{
+    font-family: sogl;
+    color: white;
+    font-size: 0.75rem;
+    padding-right: 26px
+}
+#serviceswrapper{
+    padding:80px 0;
+}
+
+#defaultsection{
+    width: 1299px;
+    margin: 0 auto;
+}
+#defaultsection h2{
+    padding-bottom: 75px;
+}
+#defaultsection p{
+    padding-right: 353px;
+    line-height: 25px;
+    border-bottom-width: 25px;
+    margin-bottom: 40px;
+
+}
+/*END MAIN - BLUESECTION*/
